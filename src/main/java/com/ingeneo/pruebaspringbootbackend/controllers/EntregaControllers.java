@@ -51,6 +51,11 @@ public class EntregaControllers {
 		return entregaService.findAll();
 	}
 	
+	@GetMapping("entrega/filtro/{palabra}")
+	public List<EntregaDTO> filtros(@PathVariable String palabra) {
+		return entregaService.filtros(palabra);
+	}
+	
 	@GetMapping("/entrega/by/id/{id}")
 	public ResponseEntity<EntregaDTO> fingById(@PathVariable String id) throws ApiBadRequest, ApiNotFound {
 		entregaValidator.validarParametroId(id);

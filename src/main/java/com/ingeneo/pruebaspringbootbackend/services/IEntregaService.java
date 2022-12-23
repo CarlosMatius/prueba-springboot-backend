@@ -11,6 +11,7 @@ public interface IEntregaService {
 	void save(EntregaRequest entregaRequest);
 	List<EntregaDTO> findAll();
 	List<EntregaDTO> findByTipo(TipoEnvio tipo);
+	List<EntregaDTO> filtros(String palabra);
 	EntregaDTO findById(Long id);
 	EntregaDTO findByGuia(String guia);
 	void update(EntregaRequest entregaRequest, Long id);

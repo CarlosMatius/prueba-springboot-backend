@@ -69,6 +69,16 @@ public class EntregaServiceImpl implements IEntregaService{
 		return dtoList;
 	}
 	
+	public List<EntregaDTO> filtros(String palabra) {
+		List<EntregaDTO> dtoList = new ArrayList<>();
+		Iterable<Entrega> entregas = entregaRepository.findAll(palabra);
+		for(Entrega entrega: entregas) {
+			EntregaDTO entregaDTO = ModelMapperSpring.modelMapper().map(entrega, EntregaDTO.class);
+			dtoList.add(entregaDTO);
+		}
+		return dtoList;
+	}
+	
 	@Override
 	public EntregaDTO findById(Long id) {
 		// TODO Auto-generated method stub

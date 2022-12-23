@@ -24,7 +24,7 @@ spring:
 ingeneo:
   jwt:
     security:
-      enabled: false
+      enabled: true
     timezone: "America/Bogota"
     issuer: "www.programacionfacil.com"
     token:
