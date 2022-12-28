@@ -14,7 +14,7 @@ public class ClienteDTO {
 	private String correo;
 	private String telefono;
 	private Date createdAt;
-	private Date updateAt;
+	private Date updatedAt;		
 	private List<EntregaDTO> entregas;
 	
 }

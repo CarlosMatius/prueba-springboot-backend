@@ -10,6 +10,7 @@ import lombok.Data;
 @Data
 public class EntregaDTO {
 
+
 	private Long id;
 	private TipoEnvio tipo;
 	private String producto;
@@ -21,7 +22,7 @@ public class EntregaDTO {
 	private String guia;
 	private BigDecimal descuento;
 	private BigDecimal precio_final;
-	private Date updateAt;
+	private Date updatedAt;
 	private String clienteNombre;
 	private String almacenamientoNombre;
 	

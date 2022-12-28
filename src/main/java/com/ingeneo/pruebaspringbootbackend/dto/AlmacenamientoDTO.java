@@ -7,12 +7,12 @@ import java.util.List;
 import lombok.Data;
 
 @Data
-public class AlmacenamientoDTO {
+public class AlmacenamientoDTO{
 
 	private Long id;
 	private String tipo;
 	private String nombre;
 	private Date createdAt;
-	private Date updateAt;
+	private Date updatedAt;
 	private List<EntregaDTO> entregas;
 }

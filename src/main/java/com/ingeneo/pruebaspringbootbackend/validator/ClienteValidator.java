@@ -58,6 +58,9 @@ public class ClienteValidator {
 		if(clienteRequest.getTelefono().matches("[0-9]")) {
 			throw new ApiUnprocessableEntity("El numero de telefono, no debe contener letras");
 		}
+		if(clienteRequest.getTelefono().length()<7) {
+			throw new ApiUnprocessableEntity("El numero de telefono es muy corto");
+		}
 	
 	}
 	
