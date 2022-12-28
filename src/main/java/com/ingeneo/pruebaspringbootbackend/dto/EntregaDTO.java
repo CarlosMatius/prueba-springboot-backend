@@ -23,7 +23,7 @@ public class EntregaDTO {
 	private BigDecimal descuento;
 	private BigDecimal precio_final;
 	private Date updatedAt;
-	private String clienteNombre;
-	private String almacenamientoNombre;
+	private ClienteDTO cliente;
+	private AlmacenamientoDTO almacenamiento;
 	
 }

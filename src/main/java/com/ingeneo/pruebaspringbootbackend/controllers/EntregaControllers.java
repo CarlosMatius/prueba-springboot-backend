@@ -85,7 +85,7 @@ public class EntregaControllers {
 		return ResponseEntity.ok(Boolean.TRUE);
 	}
 	
-	@DeleteMapping("/entregas/delete/{id}")
+	@DeleteMapping("/entrega/delete/{id}")
 	public ResponseEntity<Object> deleteEntrega(@PathVariable String id) throws ApiBadRequest, ApiNotFound {
 		entregaValidator.validarParametroId(id);
 		entregaValidator.validarBusquedaPorId(id);

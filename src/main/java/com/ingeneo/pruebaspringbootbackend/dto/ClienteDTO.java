@@ -1,7 +1,7 @@
 package com.ingeneo.pruebaspringbootbackend.dto;
 
 import java.util.Date;
-import java.util.List;
+
 
 import lombok.Data;
 
@@ -14,7 +14,5 @@ public class ClienteDTO {
 	private String correo;
 	private String telefono;
 	private Date createdAt;
-	private Date updatedAt;		
-	private List<EntregaDTO> entregas;
-	
+	private Date updatedAt;
 }
